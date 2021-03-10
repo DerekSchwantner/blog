@@ -5,7 +5,7 @@ const Profile = () => {
     const [state, setstate] = useState();
         return (
             <div>
-                <div>My name is derek and here is the profile page</div>
+                <div>Derrys profile</div>
             </div>
         )
 }
