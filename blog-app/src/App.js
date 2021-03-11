@@ -1,9 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import Profile from './components/Profile';
-import Feed from './components/Feed';
-import Archive from './components/Archive';
+import { BrowserRouter as Router, Route, Link as LinkRouter } from 'react-router-dom'
+import { Link as LinkScroll } from "react-scroll";
+import Navbar from './components/Navbar'
+import Sidebar from './components/Sidebar';
 
 
 function App() {
@@ -11,13 +10,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Router>
-          <Link to='/archive'>Archive</Link>
-          <Link to='/profile'>Profile</Link>
-          <Link to='/feed'>Feed</Link>
-
-          <Route exact path='/profile' component={Profile} />
-          <Route exact path='/feed' component={Feed} />
-          <Route exact path='/archive' component={Archive} />
+          <Sidebar />
+          <Navbar />
         </Router>
       </header>
       
